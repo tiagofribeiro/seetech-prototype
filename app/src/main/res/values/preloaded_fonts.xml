@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/akronim</item>
+        <item>@font/aladin</item>
+        <item>@font/allerta</item>
+        <item>@font/bangers</item>
+        <item>@font/carter_one</item>
+        <item>@font/coming_soon</item>
+        <item>@font/croissant_one</item>
+        <item>@font/luckiest_guy</item>
+        <item>@font/press_start_2p</item>
+        <item>@font/racing_sans_one</item>
+        <item>@font/syncopate</item>
+        <item>@font/ubuntu</item>
+    </array>
+</resources>
