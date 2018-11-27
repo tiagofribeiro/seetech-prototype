@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@android:color/white">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBarDetalhes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleTextColor="@android:color/white" />
+
+    <ScrollView
+        android:id="@+id/scrollDetalhes"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="2dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBarDetalhes"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/imgTermo"
+                    android:layout_width="170dp"
+                    android:layout_height="171dp"
+                    android:layout_gravity="top|center_horizontal"
+                    android:layout_margin="5dp"
+                    app:srcCompat="@mipmap/ic_launcher_round" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="327dp"
+                android:layout_height="227dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/txtDesc"
+                    android:layout_width="301dp"
+                    android:layout_height="195dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:scrollbars="vertical"
+                    android:text="TextView"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="22sp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="291dp"
+                android:layout_height="282dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="15dp">
+
+                <VideoView
+                    android:id="@+id/videoView"
+                    android:layout_width="264dp"
+                    android:layout_height="254dp"
+                    android:layout_gravity="center_vertical|center_horizontal" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/lblTermo"
+        android:layout_width="341dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/syncopate"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Label"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollDetalhes"
+        app:layout_constraintEnd_toEndOf="@+id/toolBarDetalhes"
+        app:layout_constraintStart_toStartOf="@+id/toolBarDetalhes"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

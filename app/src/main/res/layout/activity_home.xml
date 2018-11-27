@@ -41,7 +41,7 @@
         app:srcCompat="@drawable/seetech_logo" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnEntrar"
         android:layout_width="319dp"
         android:layout_height="51dp"
         android:layout_marginStart="8dp"

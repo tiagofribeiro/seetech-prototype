@@ -16,6 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Dashboard" android:theme="@style/DashTheme">
+        </activity>
+        <activity android:name=".Lista_Termos" android:theme="@style/DashTheme">
+        </activity>
+        <activity android:name=".Detalhes" android:theme="@style/DashTheme">
+    </activity>
+        <activity android:name=".Novo_Termo" android:theme="@style/DashTheme">
+    </activity>
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
